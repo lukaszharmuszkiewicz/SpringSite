@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +21,7 @@
     <div class="row">
         <div class="col-sm-12">
             <center><h3>Log In</h3></center>
-            <form action="/action_page.php">
+            <form action="/loginPage">
                 <div class="form-group">
                     <label  for="email">Email address:</label>
                     <input type="email" class="form-control" id="email">
@@ -33,11 +34,25 @@
                     <label class="form-check-label">
                         <input class="form-check-input" type="checkbox"> Remember me
                     </label>
-                </div>
 
-                <button type="submit" class="btn btn-primary">Log In!</button>
-                <button type="submit" class="btn btn-primary">Sign In!</button>
-            </form>
+                </div>
+</form>
+<form action="/loginPage">
+
+                <button type="submit" class="btn btn-primary">ZALOGUJ!</button>
+</form>
+
+
+
+<form action="/hello" method="POST" modelAttribute="user">
+First Name: <input type = "text" name = "name">
+Last Name: <input type = "text" name = "lastName">
+Wiek: <input type = "int" name = "wiek">
+         <input type = "submit" value = "POST" />
+<form>
+
+
+
         </div>
 
         <%--<div class="col-sm-6">--%>
