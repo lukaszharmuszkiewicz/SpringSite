@@ -44,12 +44,13 @@
 
 
 
-<form action="/hello" method="POST" modelAttribute="user">
-First Name: <input type = "text" name = "name">
-Last Name: <input type = "text" name = "lastName">
-Wiek: <input type = "int" name = "wiek">
+<form action="/hello" method="POST" modelAttribute="loginUser">
+Email: <input type = "text" name = "email">
+Password: <input type = "text" name = "password">
+
          <input type = "submit" value = "POST" />
 <form>
+${msg}
 
 
 
