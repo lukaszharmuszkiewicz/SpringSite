@@ -1,5 +1,9 @@
 package com.example.Init.models;
 
+
+import org.springframework.context.annotation.Scope;
+
+@Scope("session")
 public class LoginUser {
 
 

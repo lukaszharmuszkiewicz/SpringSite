@@ -36,33 +36,28 @@
                     </label>
 
                 </div>
+                <div>
 </form>
 <form action="/loginPage">
 
                 <button type="submit" class="btn btn-primary">ZALOGUJ!</button>
 </form>
+</div>
 
-
-
+<div>
 <form action="/hello" method="POST" modelAttribute="loginUser">
 Email: <input type = "text" name = "email">
-Password: <input type = "text" name = "password">
+Password: <input password = "text" name = "password">
 
-         <input type = "submit" value = "POST" />
+         <input type = "submit" name = "POST" />
 <form>
+</div>
+<div>
 ${msg}
+</div>
 
 
 
-        </div>
-
-        <%--<div class="col-sm-6">--%>
-            <%--<h3>Column 2</h3>--%>
-            <%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>--%>
-            <%--<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>--%>
-        <%--</div>--%>
-
-    </div>
 </div>
 
 </body>

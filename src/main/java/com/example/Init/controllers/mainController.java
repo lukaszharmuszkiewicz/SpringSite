@@ -2,6 +2,7 @@ package com.example.Init.controllers;
 
 import com.example.Init.models.LoginUser;
 import com.example.Init.models.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,17 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class mainController {
+
+
+
+
+    @RequestMapping("/")
+    public String defaultPage(){
+
+        return "test";
+    }
+
+
 
         @RequestMapping("/hello")
     public String sayHello(Model model){
@@ -39,9 +51,22 @@ public class mainController {
 
 
     @RequestMapping("/loginPage")
-    public String loginPage(){
+    public String loginPage(Model model){
+
+        model.addAttribute("msg", "loginUser");
             return "loginPage";
     }
+
+
+    @ResponseBody
+    @RequestMapping("/helloWorld")
+    public String helloWorld(){
+
+        return "Hello World głupi chuju";
+    }
+
+
+
 
 
 
